@@ -34,11 +34,11 @@ module Gitnesse
       if scenario.respond_to?(:scenario_outline)
         outline = scenario.scenario_outline
 
-        file = outline.file.gsub(/^#{@config.features_dir}\//, '')
+        file = outline.location.file.gsub(/^#{@config.features_dir}\//, '')
         name = "#{outline.name}"
         subtitle = scenario.name.gsub(/(^\|\s+|\s+\|$)/, '').gsub(/\s+\|/, ',')
       else
-        file = scenario.file.gsub(/^#{@config.features_dir}\//, '')
+        file = scenario.location.file.gsub(/^#{@config.features_dir}\//, '')
         name = scenario.name
         subtitle = nil
       end
