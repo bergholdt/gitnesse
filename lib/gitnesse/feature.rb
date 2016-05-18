@@ -57,7 +57,7 @@ module Gitnesse
     #
     # Returns a string containing the relative link as markdown
     def relative_link
-      "[[#{wiki_filename.gsub('.md', '')}]]"
+      "[#{wiki_filename.gsub('.md', '')}](#{wiki_filename.gsub('.md', '')})"
     end
   end
 end
