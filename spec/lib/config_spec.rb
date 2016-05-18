@@ -20,7 +20,7 @@ module Gitnesse
 
     it "has default settings" do
       expect(config.branch).to eq 'master'
-      expect(config.annotate_results).to be_false
+      expect(config.annotate_results).to be false
       expect(config.features_dir).to eq 'features'
     end
 
@@ -49,7 +49,7 @@ module Gitnesse
         end
 
         it "allows for config values to be set" do
-          expect(config.annotate_results).to be_true
+          expect(config.annotate_results).to be true
         end
 
         it "returns the configuration hash" do

@@ -19,11 +19,11 @@ module Gitnesse
 
     describe ".contains_features?" do
       it "returns true if the page contains features" do
-        expect(FeatureExtractor.contains_features?(example_page)).to be_true
+        expect(FeatureExtractor.contains_features?(example_page)).to be true
       end
 
       it "returns false if no features were found" do
-        expect(FeatureExtractor.contains_features?("")).to be_false
+        expect(FeatureExtractor.contains_features?("")).to be false
       end
     end
   end

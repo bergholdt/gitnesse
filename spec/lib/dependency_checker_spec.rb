@@ -60,7 +60,7 @@ module Gitnesse
         end
 
         it 'returns true' do
-          expect(checker.check_git).to be_true
+          expect(checker.check_git).to be true
         end
       end
 
@@ -84,7 +84,7 @@ module Gitnesse
         end
 
         it 'returns true' do
-          expect(checker.check_cucumber).to be_true
+          expect(checker.check_cucumber).to be true
         end
       end
 
@@ -108,7 +108,7 @@ module Gitnesse
         end
 
         it "returns true" do
-          expect(checker.check_repository_url).to be_true
+          expect(checker.check_repository_url).to be true
         end
       end
 
@@ -138,7 +138,7 @@ module Gitnesse
           end
 
           it "returns true" do
-            expect(checker.check_identifier).to be_true
+            expect(checker.check_identifier).to be true
           end
         end
 
@@ -161,7 +161,7 @@ module Gitnesse
         end
 
         it "returns true" do
-          expect(checker.check_identifier).to be_true
+          expect(checker.check_identifier).to be true
         end
       end
     end
@@ -173,7 +173,7 @@ module Gitnesse
         end
 
         it "returns true" do
-          expect(checker.check_features_dir_exists).to be_true
+          expect(checker.check_features_dir_exists).to be true
         end
       end
 

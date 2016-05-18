@@ -28,7 +28,7 @@ module Gitnesse
         end
 
         it "returns true" do
-          expect(DirManager.project_dir_present?).to be_true
+          expect(DirManager.project_dir_present?).to be true
         end
       end
 
@@ -38,7 +38,7 @@ module Gitnesse
         end
 
         it "returns false" do
-          expect(DirManager.project_dir_present?).to be_false
+          expect(DirManager.project_dir_present?).to be false
         end
       end
     end
